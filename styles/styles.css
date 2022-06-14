@@ -377,6 +377,7 @@ section {
   z-index: 10;
   border-top: 1px solid rgba(8, 75, 109, 0.08);
   border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+  background-color: #fff;
 }
 .navBar .wrapper {
   display: -webkit-box;
@@ -385,13 +386,13 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .navBar input[type=checkbox] {
   opacity: 0;
   position: absolute;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .searchCart {
@@ -399,15 +400,39 @@ section {
   display: -ms-flexbox;
   display: flex;
 }
-.searchCart .menuIcon, .searchCart .bag {
+
+.menuIcon, .bag {
   margin-right: 15px;
 }
-.searchCart .bag {
+
+.menuIcon {
+  background-color: transparent;
+  border: none;
+}
+
+.bag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+.counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.counter p {
+  width: 24px;
+  height: 24px;
+  background: #084b6d;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+}
+
 .slideOutNav {
-  display: none;
+  background-color: #084b6d;
 }
