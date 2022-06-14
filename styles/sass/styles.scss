@@ -7,8 +7,6 @@
 // pastel blue: #d3f0f9 
 // white: #fff; 
 
-
-
 // HEADINGS:
 // h1: 28px;
 // h2: 40px;
@@ -19,3 +17,8 @@
 @import "./partials/setup";
 @import "./partials/variables";
 @import "./partials/typography";
+
+img {
+    max-width: 100%;
+    display: block;
+}
