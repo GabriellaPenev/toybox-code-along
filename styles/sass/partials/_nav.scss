@@ -32,6 +32,9 @@
     input[type=checkbox]{
         opacity: 0;
         position: absolute;
+        &:checked ~ .slideOutNav {
+            left: 0;
+        }
     }
 }
 
@@ -43,10 +46,6 @@
         margin-right: 15px;
     }
 
-.menuIcon {
-    background-color: transparent;
-    border: none;
-}
 .bag {
         display: flex;
 }
@@ -65,4 +64,39 @@
 // Slide Out Nav
 .slideOutNav {
     background-color: $primary;
+    padding: 35px 50px;
+    position: fixed;
+    top: 0;
+    left: -506px;
+    height: 100vh;
+    width: 100%;
+    max-width: 506px;
+    transition: 0.75s;
+    // setting a dynamic width of 100% and then a maximum width so it doesn't go beyond 506px
+}
+
+.mainMenu {
+    a {
+        font-family: $headingFont;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        color: rgba($color: $solidWhite, $alpha: 1);
+        transition: 0.3s;
+        &:hover, &:focus {
+            color: rgba($color: $solidWhite, $alpha: 0.5);
+        }
+    }
+}
+
+.buttonContainer {
+    text-align: right;
+}
+
+.menuClose {
+    color: $solidWhite;
+    font-size: 1.2rem;
+}
+
+.menuButton {
+    cursor: pointer;
 }
