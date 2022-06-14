@@ -475,3 +475,84 @@ section {
 .menuButton {
   cursor: pointer;
 }
+
+header {
+  background-color: #f8fbf3;
+}
+
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerImgContainer {
+  width: 48%;
+}
+
+.textContainer {
+  width: 48%;
+  padding-left: 20px;
+}
+
+header h3 {
+  font-size: 0.6rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Jakarta Sans";
+  padding-bottom: 20px;
+}
+
+header p {
+  font-size: 0.8rem;
+  padding-bottom: 20px;
+}
+
+.categoryList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.categoryList .item1 {
+  background-color: #ffd698;
+}
+.categoryList .item2 {
+  background-color: #f4fcff;
+}
+.categoryList .item3 {
+  background-color: #f8fbf3;
+}
+.categoryList .item4 {
+  background-color: #fff5f5;
+}
+.categoryList .items {
+  border-radius: 10%;
+  text-align: center;
+  width: calc(45% - 50px);
+  margin: 50px 25px 25px;
+  padding: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.categoryList .items img {
+  border-radius: 10%;
+  margin-bottom: 15px;
+}
+.categoryList .items:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
