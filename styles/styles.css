@@ -517,6 +517,30 @@ header p {
   padding-bottom: 20px;
 }
 
+.contactHeader {
+  background-color: #fff5f5;
+  padding-top: 80px;
+}
+
+.contactHeader .wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.contactHeader::after {
+  content: "";
+  width: 100%;
+  height: 150px;
+  background-image: url(../assets/wave.svg);
+  background-size: 100% 100%;
+  background-color: #fff5f5;
+  display: block;
+}
+
 .categories {
   margin-top: 90px;
 }
