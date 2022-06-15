@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,176 +8,225 @@
     <title>Contact</title>
 
     <link rel="stylesheet" href="./styles/styles.css">
-	<script src="https://kit.fontawesome.com/f73f12df72.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f73f12df72.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
-   <!-- skip link for accessibility -->
-	<a href="#mainContent" class="skip-link">Skip to main content.</a>
+    <!-- skip link for accessibility -->
+    <a href="#mainContent" class="skip-link">Skip to main content.</a>
 
-	<!-- Announcements Bar -->
-	<div class="announcements">
-		<div class="wrapper">
-			<p class="smallCopy">Complimentary shipping on orders over $50. Dicount applied at checkout.</p>
-		</div>
-	</div>
+    <!-- Announcements Bar -->
+    <div class="announcements">
+        <div class="wrapper">
+            <p class="smallCopy">Complimentary shipping on orders over $50. Dicount applied at checkout.</p>
+        </div>
+    </div>
 
-	<!-- Navigation -->
-	<nav class="navBar">
-		<div class="wrapper">
-			<!-- Slide Out Menu Button-->
-			<input type="checkbox" id="openSideMenu">
-			<label for="openSideMenu" class="menuButton">
-				<img src="./assets/menu-button.svg" alt="Menu Button">
-			</label>
+    <!-- Navigation -->
+    <nav class="navBar">
+        <div class="wrapper">
+            <!-- Slide Out Menu Button-->
+            <input type="checkbox" id="openSideMenu">
+            <label for="openSideMenu" class="menuButton">
+                <img src="./assets/menu-button.svg" alt="Menu Button">
+            </label>
 
-			<!-- Slide Out Nav Content -->
-			<div class="slideOutNav">
-				<div class="buttonContainer">
-					<button class="menuClose">x</button>
-				</div>
-				<nav>
-					<ul class="mainMenu">
-						<li><a href="#">Shop</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">FAQ</a></li>
-						<li><a href="#">News</a></li>
-						<li><a href="./contact.html">Contact</a></li>
-					</ul>
-				</nav>
+            <!-- Slide Out Nav Content -->
+            <div class="slideOutNav">
+                <div class="buttonContainer">
+                    <button class="menuClose">x</button>
+                </div>
+                <nav>
+                    <ul class="mainMenu">
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
 
-			</div>
+            </div>
 
-			<!-- Nav Bar -->
-			<a href="#home" class="logo">
-				<h1>Toybox</h1>
-			</a>
+            <!-- Nav Bar -->
+            <a href="./index.html" class="logo">
+                <h1>Toybox</h1>
+            </a>
 
-			<!-- Search/Cart -->
-			<div class="searchCart">
-				<button class="menuIcon">
-					<img src="./assets/search.svg" alt="Search Icon">
-				</button>
+            <!-- Search/Cart -->
+            <div class="searchCart">
+                <button class="menuIcon">
+                    <img src="./assets/search.svg" alt="Search Icon">
+                </button>
 
-				<a href="#" class="bag">
-					<img src="./assets/shop-bag.svg" alt="Shopping Bag Icon">
-				</a>
+                <a href="#" class="bag">
+                    <img src="./assets/shop-bag.svg" alt="Shopping Bag Icon">
+                </a>
 
-				<div class="counter smallCopy">
-					<p>0</p>
-				</div>
-			</div>
+                <div class="counter smallCopy">
+                    <p>0</p>
+                </div>
+            </div>
 
-		</div>
-	</nav> 
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <header class="contactHeader">
+        <div class="wrapper">
+            <h5>Contact</h5>
+            <h3>We're here to help</h3>
+            <p>Any other questions? Reach out to 
+                <a href="mailto:support@toybox.io">support@toybox.io</a>
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="contact" id="mainContent">
+        <div class="wrapper">
+            <form action="">
+
+                <label for="name" class="sr-only">Name</label>
+                <input type="text" id="name" placeholder="Name">
+
+                <label for="surname" class="sr-only">Surname</label>
+                <input type="text" id="surname" placeholder="Surname">
+
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" id="email" placeholder="Email">
+
+                <label for="phone" class="sr-only">Phone</label>
+                <input type="tel" id="phone" placeholder="Phone">
+
+                <select name="reason" id="reson">
+                    <option value="placeholder" disabled selected >Reason for contacting</option>
+                    <option value="refund">Refund request</option>
+                    <option value="status">Order status update</option>
+                    <option value="praise">Praise!</option>
+                    <option value="complaint">General concerns</option>
+                </select>
+
+                <label for="message" class="sr-only">Message for me</label>
+                <textarea id="message" cols="30" rows="10" placeholder="Message for me"></textarea>
+
+                <fieldset>
+                    <input type="checkbox" id="terms">
+                    <label for="terms">I agree to the Terms & Conditions</label>
+                </fieldset>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </main>
 
 
 
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="wrapper">
+            <div class="footerFlexContainer">
+                <!-- Logo -->
+                <a href="./index.html" class="footerLogo">
+                    <h4>Toybox</h4>
+                </a>
+                <!-- Footer Nav Container -->
+                <div class="footerNav">
+                    <nav>
+                        <!-- Footer Shop List -->
+                        <ul class="footerShop">
+                            <li>
+                                <h5>Shop</h5>
+                            </li>
+                            <li>
+                                <a href="#">Safari</a>
+                            </li>
+                            <li>
+                                <a href="#">Ocean</a>
+                            </li>
+                            <li>
+                                <a href="#">Dinos</a>
+                            </li>
+                            <li>
+                                <a href="#">Sale</a>
+                            </li>
+                        </ul>
+                        <!-- END of Footer Shop List -->
 
-    
-    	<!-- Footer -->
-	<footer id="footer" class="footer">
-		<div class="wrapper">
-			<div class="footerFlexContainer">
-				<!-- Logo -->
-				<a href="#" class="footerLogo">
-					<h4>Toybox</h4>
-				</a>
-				<!-- Footer Nav Container -->
-				<div class="footerNav">
-					<nav>
-						<!-- Footer Shop List -->
-						<ul class="footerShop">
-							<li>
-								<h5>Shop</h5>
-							</li>
-							<li>
-								<a href="#">Safari</a>
-							</li>
-							<li>
-								<a href="#">Ocean</a>
-							</li>
-							<li>
-								<a href="#">Dinos</a>
-							</li>
-							<li>
-								<a href="#">Sale</a>
-							</li>
-						</ul>
-						<!-- END of Footer Shop List -->
+                        <!-- Footer About List -->
+                        <ul class="footerAbout">
+                            <li>
+                                <h5>About</h5>
+                            </li>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">News</a>
+                            </li>
+                            <li>
+                                <a href="#">Legal</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <!-- END of Footer About -->
 
-						<!-- Footer About List -->
-						<ul class="footerAbout">
-							<li>
-								<h5>About</h5>
-							</li>
-							<li>
-								<a href="#">About Us</a>
-							</li>
-							<li>
-								<a href="#">FAQ</a>
-							</li>
-							<li>
-								<a href="#">News</a>
-							</li>
-							<li>
-								<a href="#">Legal</a>
-							</li>
-							<li>
-								<a href="./contact.html">Contact</a>
-							</li>
-						</ul>
-						<!-- END of Footer About -->
+                        <!-- Footer Template List -->
+                        <ul class="footerTemp">
+                            <li>
+                                <h5>Template</h5>
+                            </li>
+                            <li>
+                                <a href="#">Style Guide</a>
+                            </li>
+                            <li>
+                                <a href="#">Licenses</a>
+                            </li>
+                            <li>
+                                <a href="#">Change Log</a>
+                            </li>
+                        </ul>
+                        <!-- END of Footer Template List -->
+                    </nav>
 
-						<!-- Footer Template List -->
-						<ul class="footerTemp">
-							<li>
-								<h5>Template</h5>
-							</li>
-							<li>
-								<a href="#">Style Guide</a>
-							</li>
-							<li>
-								<a href="#">Licenses</a>
-							</li>
-							<li>
-								<a href="#">Change Log</a>
-							</li>
-						</ul>
-						<!-- END of Footer Template List -->
-					</nav>
+                </div><!-- END of Footer Nav -->
+            </div><!-- END FooterFlexContainer -->
 
-				</div><!-- END of Footer Nav -->
-			</div><!-- END FooterFlexContainer -->
+            <!-- Social Icon and Copyright Flex Container -->
+            <div class="social">
 
-			<!-- Social Icon and Copyright Flex Container -->
-			<div class="social">
+                <!-- icon container -->
+                <div class="socialIcons">
+                    <a href="">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Twitter</span>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Pinterest</span>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Instagram</span>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Facebook</span>
+                    </a>
+                </div><!-- END of socialIcons -->
 
-				<!-- icon container -->
-				<div class="socialIcons">
-					<a href="">
-						<i class="fa fa-twitter" aria-hidden="true"></i>
-						<span class="sr-only">Link to Twitter</span>
-					</a>
-					<a href="">
-						<i class="fa fa-pinterest" aria-hidden="true"></i>
-						<span class="sr-only">Link to Pinterest</span>
-					</a>
-					<a href="">
-						<i class="fa fa-instagram" aria-hidden="true"></i>
-						<span class="sr-only">Link to Instagram</span>
-					</a>
-					<a href="">
-						<i class="fa fa-facebook" aria-hidden="true"></i>
-						<span class="sr-only">Link to Facebook</span>
-					</a>
-				</div><!-- END of socialIcons -->
-
-				<div class="copyright">
-					<p class="smallCopy">© Copyright Company</p>
-				</div><!-- END Copyright -->
-			</div><!-- END Social -->
-		</div><!-- END Footer Wrapper -->
-	</footer>
+                <div class="copyright">
+                    <p class="smallCopy">© Copyright Company</p>
+                </div><!-- END Copyright -->
+            </div><!-- END Social -->
+        </div><!-- END Footer Wrapper -->
+    </footer>
 </body>
+
 </html>
