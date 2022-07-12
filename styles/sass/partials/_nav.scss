@@ -54,7 +54,7 @@
     align-items: center;
     p {
         width: 24px;
-        height: 24px;
+        height: 24px; 
         background: $primary;
         border-radius: 50%;
         text-align: center;
@@ -70,7 +70,7 @@
     left: -506px;
     height: 100vh;
     width: 100%;
-    max-width: 506px;
+    max-width: 506px; 
     transition: 0.75s;
     // setting a dynamic width of 100% and then a maximum width so it doesn't go beyond 506px
 }
